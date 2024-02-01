@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*
+        # = id
+        . = class
+        : = pseudoclass
+        :: =pseudo-element
+        > = children
+        */
+
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(165, 189, 209);
+        }
+
+        main {
+            background-color: rgb(235, 219, 219);
+            margin: 100px;
+            padding: 14px;
+            box-shadow: 2px 2px rgb(100, 39, 39);
+            border-radius: 8px;
+            width: 550px;
+        }
+
+        h1{
+            text-align: center;
+            background-color: aquamarine;
+            border-radius: 9px;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: yellow;
+        }
+
+        .especial {
+            background-color: rgb(214, 116, 116);
+        }
+
+        .detalhe{
+            background-color: rgb(226, 179, 116);
+            font-weight: 300;
+            text-decoration: underline;
+        }
+
+        .peculiar:active {
+            color: chartreuse;
+            background-color: darkblue;
+            font-weight: 900;
+        }
+
+
+        .especial::before {
+            content: "»";
+        }
+        .especial::after {
+            content: "«";
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Personalizando links</h1>
+        <ul>
+            <li><a href="https://gustavoguanabara.github.io/" target="_blank">Repositorio GitHub</a></li>
+            <li><a href="https://youtube.com/cursoemvideo" target="_blank" class="especial">Canal do Youtube</a></li>
+            <li><a href="https://www.cursoemvideo.com" target="_blank" class="especial">Site Curso em Video</a></li>
+            <li>Acesse <a href="https://www.w3schools.com/html/html_css.asp" target="_blank" class="especial detalhe peculiar">esse site,</a> se busca conhecer um pouco mais sobre CSS e/ou HTML</li>
+    
+    
+        </ul>
+    </main>
+</body>
+</html>
