@@ -1,2 +1,78 @@
 @charset "UTF-8";
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: rgba(169, 169, 169, 0.76);
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+/*
+font-variant: small-caps;
+A declaração acima funciona para deixar as letras maiusculas, entretanto, a primeira letra ficará levemente maior que as outras. Como usado no h1 do header.
+
+text-transform: uppercase;
+A declaração acima funciona para colocar todas as letras em MAIUSCULA.
+Exemplo disso, é se fosse colocar no h1 do header.
+*/
+
+header p {
+    padding-bottom: 50px;
+}
+
+ header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgba(77, 76, 76, 0.432);
+    color: white;
+}
+
+section.imagem p{
+    background-color: rgba(0, 0, 0, 0.336);
+    width: 400px;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+
+
+
