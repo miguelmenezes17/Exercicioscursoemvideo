@@ -4,18 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de iframe</title>
+    <style>
+
+        body {
+            background-color: antiquewhite;
+        }
+        iframe {
+            height: 400px;
+            width: 400px;
+            border: 2px dashed rgba(0, 0, 0, 0.767);
+        }
+    </style>
 </head>
 <body>
     <h1>Testando o uso de iframe</h1>
+    <!--
+        TAMANHO PADRÃO DO IFRAME: 300X150
+    -->
     <p>Acessando o site do
-        <iframe src=https://www.cursoemvideo.com>" frameborder="0">
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" height="500" scolling="no">
+            <!--
+                SCOLLING: auto; yes; no.
+                FRAMEBORDER: 0 E 1;
+            -->
+            <a href="https://www.cursoemvideo.com">Curso em video</a>
         </iframe>
         para aprender a programar.</p>
+
         <p>O site do
-            <iframe src="https://www.google.com.br" frameborder="0"></iframe>
-            também é muito legal</p>
+            <iframe src="https://www.google.com.br" frameborder="0">
+                <a href="https://www.cursoemvideo.com" target="_blank">CursoemVideo</a>
+            </iframe>
+            também é muito legal, porém ele não funciona no iframe</p>
+
         <p>Veja só isso! Um dos sites
             <iframe src="https://miguelmenezes17.github.io/saoluisixsite/saoluis.html" frameborder="0"></iframe>
             que eu criei!</p>
+
+            <p>O repositório do Guanabara
+                <iframe src="https://gustavoguanabara.github.io" frameborder="0" height="420"></iframe>
+                também é legal!</p>
 </body>
 </html>
