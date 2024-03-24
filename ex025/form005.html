@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas" value="M"> <label for="isxmas"> Masculino</label> <br>
+            <input type="radio" name="sexo" id="isxfem" checked value="F">
+            <label for="isxfem"> Feminino</label>
+
+            <!--
+                Para o imput:radio precisamos deixar o name de "Masculino" e "Feminino" os mesmos. Pois, sendo diferentes, não nos será possível desmarcar a opção. Ou melhor, não marcaremos uma unica opção. Ao marcar a primeira, e clicar na segunda, esta ultima deveria ser selecionada, e a primeira desmarcada. Se o que foi dito, não for feito, isso não será possível.
+            -->
+
+
+
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="esfute" id="iesfute" checked> <label for="iesfute">Futebol</label> <br>
+            <input type="checkbox" name="esbas" id="iesbas" checked> <label for="iesbas">Basquete</label> <br>
+            <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label> <br>
+            <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label> <br>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Avançar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
