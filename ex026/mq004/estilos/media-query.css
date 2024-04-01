@@ -2,6 +2,102 @@
 
 /* Todas as demais Mídias!*/
 
-@media print {
+/* TIPICAL DEVICE BREAKPOINTS - Sempre pesquisar sobre antes da fazer um site.
+--------------------------
+Pequenas Telas: até 600px;
+
+Celular: De 600px até 768;
+
+Tablet: de 768 a 992px;
+
+Desktop: de 992 a 1200 px;
+
+Grandes Telas: Acima de 1200px;
+
+*/
+
+@media print { /* IMPRESSÃO */
+
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body {
+        background-color: white;
+        /* DESNECESSÁRIO*/
+
+    }
+
+    main {
+        border: 2px solid black;
+        width: 90vw;
+    }
+
+    main::after {
+        content: 'Essa impressão foi feita através do site: www.teste.com';
+        text-decoration: overline;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    img#phone { display: none;}
+    img#tablet { display: none;}
+    img#print { display: block;}
+    img#pc { display: none;}
+    img#tv { display: none;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /* TABLET*/
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    img#phone { display: none;}
+    img#tablet { display: block;}
+    img#print { display: none;}
+    img#pc { display: none;}
+    img#tv { display: none;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /* DESKTOP*/ 
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#phone { display: none;}
+    img#tablet { display: none;}
+    img#print { display: none;}
+    img#pc { display: block;}
+    img#tv { display: none;}
+}
+
+@media screen and (min-width: 1200px) { /* GRANDES TELAS */
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 800px;
+    }
+
+    img#phone { display: none;}
+    img#tablet { display: none;}
+    img#print { display: none;}
+    img#pc { display: none;}
+    img#tv { display: block;}
+}
+
+/*
+@media screen and (max-width: 600px) {
     
 }
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    
+}
+
+OBS: Por que o codigo acima fora colocado como comentário?
+R - Simples. A configuração para os dispositivos móveis (isto é, pequenas telas) já fora configurada no style.css principal. Caso contrário (se o display para phone fosse 'none' ao inves de 'block', o código acima deveria ser configurado. O site já foi feito para dispositivos móveis.
+*/
