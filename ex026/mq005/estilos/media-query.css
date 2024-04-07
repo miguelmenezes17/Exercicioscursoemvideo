@@ -32,7 +32,7 @@ Grandes Telas: Acima de 1200px;
     }
 
     p {
-        columns: 2;
+        columns: 100px 3;
         column-gap: 20px;
     }
 }
