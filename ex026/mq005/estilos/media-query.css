@@ -32,8 +32,8 @@ Grandes Telas: Acima de 1200px;
     }
 
     p {
-        columns: 100px 3;
-        column-gap: 20px;
+        columns: 3;
+        column-gap: 40px;
     }
 }
 
