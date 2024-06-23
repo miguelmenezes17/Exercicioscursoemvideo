@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap-reverse;
+        }
+
+        div.item {
+            background-color: aquamarine;
+            border: 1px solid black;
+
+            text-align: center;
+        }
+
+        div.second-container {
+            background-color: chartreuse;
+
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap-reverse;
+        }
+
+        div.it {
+            background-color: crimson;
+            border: 1px solid black;
+
+            text-align: center;
+        }
+
+        div.three-container {
+            background-color: blueviolet;
+
+            display: flex;
+
+            flex-flow: row wrap;
+
+            /*Flex:auto não funciona no pai, somente no filho.*/
+
+            /*
+
+            Flex Flow é como se fosse a shorthand para as propriedades abaixo:
+            flex-direction: row;
+            flex-wrap: nowrap;
+            */
+        }
+
+        div.bloco {
+            background-color: rgb(149, 185, 66);
+            border: 1px solid black;
+
+            text-align: center;
+            flex: auto;
+        }
+
+        div.four-container {
+            background-color: coral;
+            height: 100px;
+            display: flex;
+            flex-flow: column wrap;
+        }
+
+        div.cont-it {
+            background-color: rgb(214, 180, 118);
+            border: 1px solid black;
+            text-align: center;
+            flex: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"> Exemplo de Bloco - A</div>
+        <div class="item"> Exemplo de Bloco - B</div>
+        <div class="item"> Exemplo de Bloco - C</div>
+        <div class="item"> Exemplo de Bloco - D</div>
+        <div class="item"> Exemplo de Bloco - E</div>
+        <div class="item"> Exemplo de Bloco - F</div>
+    </div>
+
+    <br>
+
+    <div class="second-container">
+        <div class="it"> Exemplo de Bloco - 1</div>
+        <div class="it"> Exemplo de Bloco - 2</div>
+        <div class="it"> Exemplo de Bloco - 3</div>
+        <div class="it"> Exemplo de Bloco - 4</div>
+        <div class="it"> Exemplo de Bloco - 5</div>
+        <div class="it"> Exemplo de Bloco - 6</div>
+        <div class="it"> Exemplo de Bloco - 7</div>
+    </div>
+
+    <br>
+
+    <div class="three-container">
+        <div class="bloco"> Exemplo de Bloco - 1</div>
+        <div class="bloco"> Exemplo de Bloco - 2</div>
+        <div class="bloco"> Exemplo de Bloco - 3</div>
+        <div class="bloco"> Exemplo de Bloco - 4</div>
+        <div class="bloco"> Exemplo de Bloco - 5</div>
+        <div class="bloco"> Exemplo de Bloco - 6</div>
+        <div class="bloco"> Exemplo de Bloco - 7</div>
+    </div>
+
+    <br>
+
+    <div class="four-container">
+        <div class="cont-it"> Exemplo de Bloco - 1</div>
+        <div class="cont-it"> Exemplo de Bloco - 2</div>
+        <div class="cont-it"> Exemplo de Bloco - 3</div>
+        <div class="cont-it"> Exemplo de Bloco - 4</div>
+        <div class="cont-it"> Exemplo de Bloco - 5</div>
+        <div class="cont-it"> Exemplo de Bloco - 6</div>
+        <div class="cont-it"> Exemplo de Bloco - 7</div>
+    </div>
+</body>
+</html>
