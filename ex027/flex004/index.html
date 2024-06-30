@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+        }
+
+        div.item {
+            background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        .conteiner-a {
+            background-color: rgb(134, 103, 91);
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-end;
+        }
+
+        .item-a {
+            background-color: black;
+            border: 1px solid white;
+            color: wheat;
+            text-align: center;
+        }
+
+        .conteiner-b {
+            background-color: aqua;
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+        }
+
+        .item-b {
+            background-color: brown;
+            border: 1px solid white;
+            color: wheat;
+            text-align: center;
+        }
+
+        .conteiner-c {
+            background-color: yellow;
+            
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+
+        .item-c {
+            background-color: chartreuse;
+            border: 1px solid black;
+            color: brown;
+            text-align: center;
+        }
+
+        .conteiner-d {
+            background-color: red;
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+        }
+
+        .item-d {
+            background-color: white;
+            border: 1px solid black;
+            color: blue;
+            text-align: center;
+        }
+        .conteiner-e {
+            background-color: orange;
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+        }
+
+        .item-e {
+            background-color: burlywood;
+            border: 1px solid black;
+            color: black;
+            text-align: center;
+        }
+
+        .conteiner-f {
+            background-color: gray;
+            height: 300px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            align-items: start;
+        }
+
+        .item-f {
+            background-color: green;
+            border: 1px solid black;
+            color: black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Justify-content</h1>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+    </div>
+    <br>
+    <div class="conteiner-a">
+        <div class="item-a">A</div>
+        <div class="item-a">B</div>
+        <div class="item-a">C</div>
+        <div class="item-a">D</div>
+        <div class="item-a">E</div>
+        <div class="item-a">F</div>
+    </div>
+    <br>
+    <div class="conteiner-b">
+        <div class="item-b">A</div>
+        <div class="item-b">B</div>
+        <div class="item-b">C</div>
+        <div class="item-b">D</div>
+        <div class="item-b">E</div>
+        <div class="item-b">F</div>
+    </div>
+    <br>
+    <div class="conteiner-c">
+        <div class="item-c">A</div>
+        <div class="item-c">B</div>
+        <div class="item-c">C</div>
+        <div class="item-c">D</div>
+        <div class="item-c">E</div>
+        <div class="item-c">F</div>
+    </div>
+    <br>
+    <div class="conteiner-d">
+        <div class="item-d">A</div>
+        <div class="item-d">B</div>
+        <div class="item-d">C</div>
+        <div class="item-d">D</div>
+        <div class="item-d">E</div>
+        <div class="item-d">F</div>
+    </div>
+    <br>
+    <div class="conteiner-e">
+        <div class="item-e">A</div>
+        <div class="item-e">B</div>
+        <div class="item-e">C</div>
+        <div class="item-e">D</div>
+        <div class="item-e">E</div>
+        <div class="item-e">F</div>
+    </div>
+
+    <h1>Align items</h1>
+
+    <div class="conteiner-f">
+        <div class="item-f">A</div>
+        <div class="item-f">B</div>
+        <div class="item-f">C</div>
+        <div class="item-f">D</div>
+        <div class="item-f">E</div>
+        <div class="item-f">F</div>
+    </div>
+</body>
+</html>
