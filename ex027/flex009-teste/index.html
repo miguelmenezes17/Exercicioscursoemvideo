@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando propriedades Flex</title>
+    <style>
+        .box {
+            background-color: blanchedalmond;
+            height: 400px;
+            width: 250px;
+            
+            display: flex;
+            justify-content: center;
+            align-items: normal;
+            margin: auto;
+            padding: 20px;
+            flex-flow: column wrap;
+            border: 2px solid black;
+            border-radius: 12px;
+        }
+
+        .box > .item {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px;
+            background-color: aqua;
+            text-align: center;
+        }
+
+        .box > .item:hover {
+            background-color: rgba(127, 255, 212, 0.534);
+            color: blue;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="item" id="a">Numero 1</div>
+        <div class="item" id="b">Numero 2</div>
+        <div class="item" id="c">Numero 3</div>
+        <div class="item" id="d">Numero 4</div>
+        <div class="item" id="e">Numero 5</div>
+    </div>
+</body>
+</html>

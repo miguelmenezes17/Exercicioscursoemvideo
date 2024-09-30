@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando propriedades Flex</title>
+    <style>
+            #box {
+                background-color: rgb(221, 212, 176);
+                display: flex;
+                height: 400px;
+                padding: 10px;
+                justify-content: center;
+            }
+
+            #box > div.item {
+                background-color: rgb(175, 250, 225);
+                text-align: center;
+                padding: 10px;
+                margin: 2px;
+                flex-flow: row wrap;
+            }
+
+            #a {
+                align-self: self-start;
+            }
+
+            div#b {
+                align-self: center;
+            }
+
+            div#c {
+                align-self: self-end;
+            }
+
+            div#d {
+                align-self: stretch;
+            }
+
+            div#e {
+                align-self: auto;
+            }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div class="item" id="a">Numero 1</div>
+        <div class="item" id="b">Numero 2</div>
+        <div class="item" id="c">Numero 3</div>
+        <div class="item" id="d">Numero 4</div>
+        <div class="item" id="e">Numero 5</div>
+    </div>
+</body>
+</html>
