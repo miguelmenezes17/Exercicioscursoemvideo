@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando Flex Basis</title>
+    <style>
+        .box {
+            background-color: rgb(206, 186, 157);
+            max-height: max-content;
+            border: 1px solid black;
+
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: start
+        }
+
+        .box > .item {
+            background-color: chocolate;
+            border: 1px solid black;
+            flex-basis: 120px;
+            text-align: center;
+            align-content: center;
+            padding: 10px;
+            margin: 12px;
+        }
+
+        .box > .item:hover {
+            background-color: rgba(210, 105, 30, 0.568);
+            color: beige;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="item" id="a">Item a - Testando a propriedade flex-basis</div>
+        <div class="item" id="b">Item b</div>
+        <div class="item" id="c">Item c - Testando textos maiores dentro das caixas</div>
+        <div class="item" id="d">Item d</div>
+        <div class="item" id="e">Item e</div>
+        <div class="item" id="f">Item f</div>
+        <div class="item" id="g">Item g</div>
+    </div>
+</body>
+</html>
