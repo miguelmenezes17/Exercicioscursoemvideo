@@ -5,3 +5,5 @@ O repositório compartilhado, possui a finalidade de aprendizado e consulta dos 
 
 
 <a href="https://miguelmenezes17.github.io/Exercicioscursoemvideo/ex001/ex001.html">Clique aqui para executar o exercício de número 001</a>
+
+<a href="https://miguelmenezes17.github.io/Exercicioscursoemvideo/ex002/ex002.html">Clique aqui para executar o exercício de número 002</a>
