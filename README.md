@@ -15,11 +15,3 @@ O repositório compartilhado, possui a finalidade de aprendizado e consulta dos 
 <a href="#">Clique aqui para executar o exercício de número 005</a>
 
 <a href="https://miguelmenezes17.github.io/Exercicioscursoemvideo/ex006/ex006.html">Clique aqui para executar o exercício de número 006</a>
-
-<a href="https://miguelmenezes17.github.io/Exercicioscursoemvideo/ex007/html4.html">Clique aqui para executar o exercício de número 007-1</a>
-
-<a href="">Clique aqui para executar o exercício de número 007-2</a>
-
-<a href="">Clique aqui para executar o exercício de número 007-3</a>
-
-<a href="">Clique aqui para executar o exercício de número 008</a>
